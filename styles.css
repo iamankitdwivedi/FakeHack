@@ -1,0 +1,151 @@
+// Media Query Mixin
+@mixin breakpoint ($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+
+body{
+  background-image: url("fif.jpg");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+img{
+  float: left;
+}
+h1{
+  font-size: 100px;
+  font-weight: bold;
+  color: #326295;
+  font-family: 'Audiowide', cursive;
+
+}
+.ac{
+  display: none;
+}
+#acno{
+  border-radius: 5px;
+  border: 0.5px solid #474747;
+}
+.auth{
+  width: 100px;
+  height: 40px;
+  background-color: #326295;
+  color: white;
+  transition: 0.2s;
+  text-decoration: none;
+  border-radius: 5px;
+  border-style: none;
+}
+button{
+  width: 150px;
+  height: 60px;
+  background-color: #326295;
+  color: white;
+  transition: 0.2s;
+  text-decoration: none;
+  border-radius: 5px;
+  border-style: none;
+}
+
+button:hover{
+  color: #326295;
+  background-color: white;
+  border: 0.5px solid #326295;
+}
+
+.loader {
+  display: none;
+  background-color: white;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.lod {
+  margin-top: 40vh;
+  position: absolute;
+  display: none;
+  background-color: white;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.over{
+  position: absolute;
+  padding-top: 0vh;
+  background-color: #474747;
+  opacity: 0.8;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+#cl{
+  color: red;
+}
+.comp{
+  font-weight: bolder;
+}
+.up{
+  font-weight: 900;
+  font-size: 500px;
+  font-size: 20px;
+  float: right;
+  color: #777777;
+}
+.nonn{
+  clear: both;
+  border: 2px solid #777777;
+  display: block;
+  justify-content: center;
+
+  padding: 20px;
+  width: 416px;
+  background-color: white;
+  color: #474747;
+}
+
+
+@media screen and (max-width: 480px) {
+  body{
+    display: block;
+    justify-content: center;
+    background-position: center;
+  }
+  h1{
+    font-family: 'Audiowide', cursive;
+    font-size: 50px;
+    padding: 0px;
+    color: #326295;
+    height: 100%;
+    width: 100%;
+  }
+  .nonn{
+    width: 90%;
+    text-align: left;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+}

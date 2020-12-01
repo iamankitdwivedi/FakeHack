@@ -1,0 +1,35 @@
+body{
+    background-color: #474747;
+    border-top: 20px solid #e74c3c;
+    margin: 20px;
+    height: 100%;
+    color: #e74c3c;
+    font-size: large;
+}
+.sys{
+    width: max-content;
+    color: #e74c3c;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.syss{
+    display: none;
+}
+
+.down{
+    font-size: 40px;
+}
+
+.mixi{
+    margin-top: 70px;
+    src: url("vir.png");
+}
+
+@media screen and (max-width: 480px){
+    .down{
+        font-size: 30px;
+    }
+    .sys{
+        font-size: 40px;
+    }
+}
