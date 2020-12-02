@@ -24,6 +24,7 @@ h1{
 
 }
 .ac{
+  font-size: larger;
   display: none;
 }
 #acno{
@@ -31,6 +32,7 @@ h1{
   border: 0.5px solid #474747;
 }
 .auth{
+  font-size: 15px;
   width: 100px;
   height: 40px;
   background-color: #326295;
